@@ -1,77 +1,166 @@
-# 📊 Sales Performance & Customer Segmentation Analysis
+# 📊 Sales Performance & Customer Insights Dashboard
 
-End-to-End Data Analytics Project using **Excel, SQL, Python, and Power BI**.
+An end-to-end data analytics project focused on transforming raw sales data into actionable business insights using **SQL, Excel, and Power BI**.
 
 ---
 
 ## 🚀 Project Overview
 
-This project analyzes sales performance, customer behavior, and product profitability to generate insights for business decision-making.
+This project analyzes retail sales data to uncover trends in **revenue, profitability, customer behavior, and product performance**.
 
-The goal was to simulate a real-world analytics workflow by transforming raw sales data into interactive dashboards and actionable insights.
-
----
-
-## 🛠 Tools Used
-
-- Excel (Pivot Tables, LOOKUPS, Dashboards)
-- Python (Pandas)
-- PostgreSQL
-- Power BI
-- Jupyter Notebook
-- Git & GitHub
+The goal was to simulate a real-world business scenario:
+> Turning raw, messy data into decision-ready insights through data cleaning, analysis, and visualization.
 
 ---
 
-## 🏗 Project Workflow
+## 🧠 Key Business Questions
 
-Raw Sales Data  
-↓  
-Python Data Cleaning  
-↓  
-SQL Business Analysis  
-↓  
-Excel Pivot Tables & Dashboard  
-↓  
-Power BI Executive Dashboard
+- Which region generates the most sales?
+- Which product categories are most profitable?
+- How do discounts impact profit?
+- Who are the most valuable customers?
+- What are the sales trends over time?
 
 ---
 
-## 📊 Key Analysis
+## 📊 Key Insights
 
-- Sales performance by region
-- Top-selling products
-- Customer lifetime value
-- Monthly sales trends
-- Profitability by category
+- 📍 **West region** generates the highest revenue
+- 💻 **Technology category** is the most profitable
+- ⚠️ Higher discounts are associated with lower profit margins
+- 📈 Sales show clear monthly trends with peak periods
+- 🛍️ A small group of products drives a large share of revenue
 
 ---
 
-## 📂 Project Structure
+## 🛠 Tools & Technologies
 
+- **Python (Pandas)** → Data cleaning  
+- **PostgreSQL** → Data analysis & querying  
+- **Excel** → Pivot tables, KPIs, dashboard  
+- **Power BI** → Interactive dashboard & storytelling  
 
-sales-performance-customer-segmentation-analysis
+---
+
+## 🧹 Data Cleaning Process
+
+- Handled missing values
+- Fixed CSV formatting issues (unterminated quoted fields)
+- Standardized column names
+- Converted data types (dates, numeric fields)
+- Exported clean dataset for analysis
+
+---
+
+## 🗄 SQL Analysis
+
+Key analysis performed:
+
+- Sales by region, category, and sub-category
+- Customer Lifetime Value (CLV)
+- Discount vs Profit impact
+- Top-performing products
+- Regional performance comparison
+
+Example query:
+
+```sql
+SELECT
+    region,
+    SUM(sales) AS total_sales,
+    SUM(profit) AS total_profit
+FROM sales
+GROUP BY region
+ORDER BY total_sales DESC;
+📈 Excel Dashboard
+
+Built using:
+
+Pivot Tables
+
+KPI Cards (Sales, Profit, Orders, Discount)
+
+Slicers (Region, Category, Segment)
+
+📌 Focus:
+
+Quick business overview
+
+Interactive filtering
+
+Clean layout
+
+📊 Power BI Dashboard
+
+Features:
+
+KPI Cards (Total Sales, Profit, Orders, Profit Margin)
+
+Sales by Region (Bar Chart)
+
+Sales by Category (Column Chart)
+
+Monthly Sales Trend (Line Chart)
+
+Top Products (Top N Analysis)
+
+Interactive slicers (Region, Category, Segment)
+
+📌 Design Focus:
+
+Clean, recruiter-level layout
+
+Consistent color theme
+
+Clear storytelling with insights
+
+🎯 What I Learned
+
+Data cleaning is a critical step in any analysis
+
+SQL is powerful for extracting business insights
+
+Dashboard design should prioritize clarity over complexity
+
+Small data issues can significantly impact results
+
+📸 Dashboard Preview
+
+(Add your Power BI screenshot here)
+
+📂 Project Structure
+sales-performance-analysis/
 │
-├── data
-├── excel
-├── notebooks
-├── sql
-├── powerbi
+├── data/
+│   ├── raw/
+│   └── cleaned/
+│
+├── sql/
+│   └── analysis_queries.sql
+│
+├── excel/
+│   └── dashboard.xlsx
+│
+├── powerbi/
+│   └── dashboard.pbix
+│
 └── README.md
+💼 About Me
+
+I’m an aspiring Data Analyst with a background in Applied Statistics & IT, passionate about turning data into insights that drive decisions.
+
+🔗 Let’s connect on LinkedIn
+🔗 Open to entry-level Data Analyst roles & internships
+
+⭐ If You Like This Project
+
+Feel free to:
+
+⭐ Star the repository
+
+🍴 Fork it
+
+💬 Share feedback
 
 
 ---
-
-## 💡 Skills Demonstrated
-
-- Data cleaning with Python
-- SQL business analysis
-- Excel pivot tables and lookups
-- Interactive dashboards in Power BI
-- End-to-end analytics workflow
-
----
-
-## 📬 Connect
-
-Open to opportunities in **Data Analytics and Business Intelligence**.
